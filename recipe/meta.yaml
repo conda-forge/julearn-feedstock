@@ -1,5 +1,5 @@
 {% set name = "julearn" %}
-{% set version = "0.3.4" %}
+{% set version = "0.3.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/julearn-{{ version }}.tar.gz
-  sha256: 0527b5b812a11f2df347dc3025293eec75e6b746532ee56f827ea81888954bd2
+  sha256: 6a32f4c80216f57b2f6a1cb8041521bb0877baec0294f87bfdf536aa8500e599
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
